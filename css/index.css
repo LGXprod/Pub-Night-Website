@@ -1,0 +1,25 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #cc9933;
+    font-size: 1.5em;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 1;
+}
+
+.centre {
+    position: relative;
+    text-align: center;
+}
+
+#bg-image {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+}
