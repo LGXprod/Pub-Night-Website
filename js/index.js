@@ -1,3 +1,5 @@
+$(".about-us").css
+
 function moveNav(win) {
     const nav = $(".centre");
 
@@ -11,8 +13,18 @@ function moveNav(win) {
     nav.css(style);
 }
 
+function resizeAboutUs() {
+    const style = {
+        top: $("#bg-image").height()
+    }
+
+    $(".about-us").css(style);
+}
+
 moveNav($(window));
+resizeAboutUs();
 
 $(window).on("resize", () => {
     moveNav($(this));
+    resizeAboutUs();
 });

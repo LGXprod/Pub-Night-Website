@@ -1,5 +1,31 @@
+body {
+    background-color: #5d5b6a;
+}
+
+hr {
+    color: #758184;
+    background-color: #758184;
+    margin: 0;
+    height: 2px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #f5cdaa;
+}
+
+p {
+    color: #f5cdaa;
+    font-size: 1.5vw;
+}
+
 .navbar-dark .navbar-nav .nav-link {
-    color: #cc9933;
+    color: #f5cdaa;
+    font-size: 1.5em;
+}
+
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+    color: #cfb495;
     font-size: 1.5em;
 }
 
@@ -10,7 +36,7 @@
 
 .navbar {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .centre {
@@ -20,6 +46,32 @@
 
 #bg-image {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     width: 100vw;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+}
+
+.about-us {
+    position: relative;
+}
+
+.info {
+    padding: 10px;
+}
+
+.profile-pic {
+    float: left;
+    width: 30vw;
+    margin-right: 15px;
+}
+
+.profile {
+    display: block;
+    height: auto;
+    overflow: auto;
+    text-align: left;
 }
