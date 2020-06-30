@@ -14,8 +14,20 @@ function moveNav(win) {
 }
 
 function resizeAboutUs() {
+    const image = $("#bg-image");
+    const container = $("#bg-frame");
+
+    let frame;
+    console.log("i", image.height())
+    console.log("f", image.height())
+    if (container.height() < image.height()) {
+        frame = container;
+    } else {
+        frame = image;
+    }
+
     const style = {
-        top: $("#bg-image").height()
+        top: frame.height()
     }
 
     $(".about-us").css(style);
@@ -27,4 +39,9 @@ resizeAboutUs();
 $(window).on("resize", () => {
     moveNav($(this));
     resizeAboutUs();
+});
+
+$("#aboutUsLink").click(function() {
+    console.log("here");
+    document.getElementById("about-us").scrollIntoView({ behavior: 'smooth', block: 'start' });
 });

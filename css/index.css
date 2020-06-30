@@ -9,6 +9,15 @@ hr {
     height: 2px;
 }
 
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+
 h1, h2, h3 {
     text-align: center;
     color: #f5cdaa;
@@ -44,19 +53,26 @@ p {
     text-align: center;
 }
 
+#bg-frame {
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden; 
+    position: relative;
+}
+
 #bg-image {
     position: absolute;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
+}
+
+.about-us {
+    position: relative;
 }
 
 .main {
     position: absolute;
     top: 0;
-}
-
-.about-us {
-    position: relative;
 }
 
 .info {
@@ -69,9 +85,18 @@ p {
     margin-right: 15px;
 }
 
+.profile-desc {
+    padding: 2.5vw;
+}
+
 .profile {
     display: block;
     height: auto;
     overflow: auto;
     text-align: left;
+    margin-top: 20px;
+}
+
+.fb-page {
+    border-radius: 25px;
 }

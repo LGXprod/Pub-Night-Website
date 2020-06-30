@@ -8,9 +8,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <title>Pub Knight</title>
+    <title>Pub Night</title>
 </head>
 <body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="esnwt1a7"></script>
   
     <div class="main">
 
@@ -29,7 +32,7 @@
             <div class="centre collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
+                      <a class="nav-link" id="aboutUsLink">About Us</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Ratings</a>
@@ -41,7 +44,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Episodes</a>
+                      <a class="nav-link" href="./episodes.html">Episodes</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Merch</a>
@@ -50,43 +53,76 @@
             </div>
         </nav>
 
-        <img src="./images/background-image.png" id="bg-image">
+        <div id="bg-frame">
+          <img src="./images/background-image.png" id="bg-image">
+        </div>
 
     </div>
 
     <div style="position: absolute; width: 100vw;">
 
-        <div class="about-us">
+        <div class="about-us" id="about-us">
+
+            <hr>
+
+            <div class="info">
+
+                  <h1>Zac and Sam's 'Pub Night'</h1>
+
+                  <p style="text-align: center;">
+                    Welcome to our new podcast, Zac and Sam's 'Pub Night' - we drink, you watch. Spawned from a shitty quarantine idea during my lunch-break at work, we drink and review cheap alcohol to your entertainment and benefit of your wallet.
+                  </p>
+
+                  <div class="fb-page"
+                  data-href="https://www.facebook.com/pubnight"
+                  data-width="380" 
+                  data-hide-cover="false"
+                  data-show-facepile="true"></div>
+
+            </div>
 
             <hr>
             
             <div class="info">
-                <h1>Zac and Sam's 'Pub Night'</h1>
-
-                <p style="text-align: center;">
-                  Welcome to our new podcast, Zac and Sam's 'Pub Night' - we drink, you watch. Spawned from a shitty quarantine idea during my lunch-break at work, we drink and review cheap alcohol to your entertainment and benefit of your wallet.
-                </p>
 
                 <h2>About Your Hosts</h2>
-
+    
                 <div>
-                    <div class="profile" style="margin-bottom: 10px;">
-                      <img class="profile-pic" src="./images/zac-photo.png">
-                      <h2>Zac Grenfell</h2>
-                      <p>Your information. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum nibh non blandit condimentum. Donec nisl enim, gravida non consequat elementum, lacinia vel turpis. Aenean congue dignissim nisi vel ultricies. Morbi in mauris nunc. Nunc viverra hendrerit odio a luctus. Nullam eget turpis non turpis maximus commodo. Maecenas tempus lacinia risus non convallis. Donec in est imperdiet, suscipit orci eu, porttitor ante. Sed congue ipsum eu diam ornare vehicula. Maecenas euismod ornare felis sit amet tempor. Curabitur ultricies quam non arcu convallis tincidunt. Nam ultrices libero a ex eleifend bibendum. Donec velit ipsum, dapibus vitae pellentesque nec, venenatis finibus lacus. Phasellus tincidunt et mauris vulputate ornare.</p>
+                    <div class="profile">
+                      <img class="profile-pic" src="./images/zac-photo-border.png">
+                      <div class="profile-desc">
+                        <h3>Zac Grenfell</h3>
+                        <p>Your information. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum nibh non blandit condimentum. Donec nisl enim, gravida non consequat elementum, lacinia vel turpis. Aenean congue dignissim nisi vel ultricies. Morbi in mauris nunc. Nunc viverra hendrerit odio a luctus. Nullam eget turpis non turpis maximus commodo. Maecenas tempus lacinia risus non convallis. Donec in est imperdiet, suscipit orci eu, porttitor ante. Sed congue ipsum eu diam ornare vehicula. Maecenas euismod ornare felis sit amet tempor. Curabitur ultricies quam non arcu convallis tincidunt. Nam ultrices libero a ex eleifend bibendum. Donec velit ipsum, dapibus vitae pellentesque nec, venenatis finibus lacus. Phasellus tincidunt et mauris vulputate ornare.</p>
+                      </div>
                     </div>
 
                     <div class="profile">
-                      <img class="profile-pic" src="./images/sam-photo.png">
-                      <h2>Sam Dobbin</h2>
-                      <p>Your information. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum nibh non blandit condimentum. Donec nisl enim, gravida non consequat elementum, lacinia vel turpis. Aenean congue dignissim nisi vel ultricies. Morbi in mauris nunc. Nunc viverra hendrerit odio a luctus. Nullam eget turpis non turpis maximus commodo. Maecenas tempus lacinia risus non convallis. Donec in est imperdiet, suscipit orci eu, porttitor ante. Sed congue ipsum eu diam ornare vehicula. Maecenas euismod ornare felis sit amet tempor. Curabitur ultricies quam non arcu convallis tincidunt. Nam ultrices libero a ex eleifend bibendum. Donec velit ipsum, dapibus vitae pellentesque nec, venenatis finibus lacus. Phasellus tincidunt et mauris vulputate ornare.</p>
+                      <img class="profile-pic" src="./images/sam-photo-border.png">
+                      <div class="profile-desc">
+                        <h3>Sam Dobbin</h3>
+                        <p>Your information. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum nibh non blandit condimentum. Donec nisl enim, gravida non consequat elementum, lacinia vel turpis. Aenean congue dignissim nisi vel ultricies. Morbi in mauris nunc. Nunc viverra hendrerit odio a luctus. Nullam eget turpis non turpis maximus commodo. Maecenas tempus lacinia risus non convallis. Donec in est imperdiet, suscipit orci eu, porttitor ante. Sed congue ipsum eu diam ornare vehicula. Maecenas euismod ornare felis sit amet tempor. Curabitur ultricies quam non arcu convallis tincidunt. Nam ultrices libero a ex eleifend bibendum. Donec velit ipsum, dapibus vitae pellentesque nec, venenatis finibus lacus. Phasellus tincidunt et mauris vulputate ornare.</p>
+                      </div>
                     </div>
                 </div>
-    
-                <h2>Inspiration</h2>
-    
-                <h2>Social Media Profiles</h2>
+
             </div>
+
+            <hr>
+
+            <div class="info">
+                <h2>Inspiration</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo tincidunt lacus in fringilla. Praesent sed dignissim ipsum. Integer nec tempor neque, vitae tempor purus. Quisque efficitur ornare tristique. Proin placerat aliquam facilisis. Donec pulvinar orci elit, id elementum nulla luctus eu. Donec sed scelerisque lectus, sed consequat ligula. Curabitur bibendum, sem quis luctus sagittis, lorem lectus bibendum dui, in hendrerit ante tellus id risus. Sed pellentesque accumsan eleifend. Duis consectetur tortor ac congue consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis et sapien luctus leo dapibus egestas. Duis consequat diam vitae pellentesque consequat.<br><br>
+
+Morbi ac ullamcorper nunc, vitae elementum purus. In ullamcorper semper nisi, pharetra congue lacus finibus vel. Pellentesque ligula nibh, rhoncus et massa eu, scelerisque pellentesque magna. Maecenas lobortis leo sed pellentesque lobortis. Donec pulvinar maximus sollicitudin. Nulla et arcu vitae purus fermentum accumsan. In metus risus, tincidunt ac fringilla at, blandit nec lacus. Suspendisse vehicula, metus nec ullamcorper condimentum, nulla ipsum ultrices lacus, vitae sollicitudin ligula justo sed metus. In facilisis, tellus non mollis vehicula, nunc massa commodo lectus, interdum scelerisque dui purus quis mauris. Duis et congue libero, et vulputate urna. In sed elit aliquet, tempor tortor non, venenatis dui. Quisque aliquam nisi felis, ut scelerisque sapien auctor vel. Aenean est magna, aliquam in urna vel, elementum maximus quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pulvinar sem sed tincidunt lobortis. <br><br>
+
+Fusce sagittis vestibulum lacus, vitae sodales dolor porttitor cursus. Vestibulum at augue lectus. Aenean vel ultricies ante, id luctus diam. Curabitur a elit in nisi suscipit fringilla. Sed viverra purus quis ipsum ornare, nec vestibulum nulla rhoncus. Integer molestie egestas felis, nec pulvinar elit bibendum vitae. Phasellus tincidunt nulla a metus consectetur imperdiet. In vel lobortis tortor. Duis vulputate finibus iaculis. Cras at dolor lacus. Aenean maximus elit non dui rhoncus, eget semper felis dignissim. In efficitur tortor ac dui suscipit vulputate. Aenean eu dapibus ante.<br><br>
+
+Pellentesque ornare suscipit pulvinar. Vestibulum magna ligula, tempus in lectus ac, efficitur dictum velit. In lacus enim, auctor et pretium scelerisque, ultricies eget purus. Morbi feugiat ac ante quis rhoncus. Pellentesque ornare magna sed fermentum dictum. Aenean ac est a augue cursus mollis. Phasellus in lectus quis nisi tincidunt commodo. In lacinia ipsum eu luctus vestibulum. Quisque eget venenatis libero. Praesent ullamcorper pretium massa. Nullam ut lacinia dolor. Mauris tempus orci eget eros imperdiet semper in eu urna.<br><br>
+                </p>
+            </div>
+
         </div>
 
     </div>
