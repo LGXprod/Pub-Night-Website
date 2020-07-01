@@ -1,8 +1,69 @@
+a {
+    display: inline-block;
+    width: 10%;
+    padding-right: 20%;
+    margin: 0;
+    text-decoration: none;
+    color: #f5cdaa;
+}
+
+a:hover {
+    color: #cfb495;
+}
+
+.one:hover ~ hr {
+    margin-left: 0;
+}
+
+.two:hover ~ hr {
+    margin-left: 20%;
+}
+
+.three:hover ~ hr {
+    margin-left: 40%;
+}
+
+.four:hover ~ hr {
+    margin-left: 60%;
+}
+
+.platform-selected {
+    width: 7.5%;
+    margin: 0;
+    background: #758184;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #758184;
+    transition: .3s ease-in-out;
+}
+
+.platform-choice {
+    display: inline;
+    text-align: center;
+}
+
+.platforms {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+
 .navbar {
     position: relative;
 }
 
-.episode-panel {
-    border-width: 10px;
+.video {
+    float: left;
+    width: 45vw;
+    height: 25vw;
+    border-width: 3.5px;
+    border-radius: 1.5px;
     border-color: #758184;
+    border-style: solid;
+    margin-right: 10px;
+}
+
+.info {
+    overflow: hidden;
 }
