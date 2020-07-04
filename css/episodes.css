@@ -8,7 +8,7 @@
     margin-right: 5%;
 }
 
-#episode4 {
+#episode4, #episode3 {
     text-align: center;
     padding: 0;
     margin-bottom: 0;
@@ -26,17 +26,24 @@
 }
 
 .video {
+    float: left;
     width: 45vw;
     height: 25vw;
-    border-width: 3.5px;
+    border-width: 4px;
     border-radius: 1.5px;
     border-color: #758184;
     border-style: solid;
     margin-right: 10px;
+    margin-bottom: 6px;
 }
 
 .vid-panel {
     float: left;
+}
+
+.vid-panel ul {
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .panel {
@@ -45,4 +52,8 @@
 
 .info {
     overflow: hidden;
+}
+
+.fb, .insta {
+    display: none;
 }
