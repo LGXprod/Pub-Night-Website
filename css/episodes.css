@@ -19,6 +19,9 @@
     display: none;
     position: relative;
     bottom: 10px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #758184;
 }
 
 .navbar {
@@ -44,6 +47,7 @@
 .vid-panel ul {
     padding: 0;
     margin-bottom: 0;
+    color: #f5cdaa;
 }
 
 .panel {

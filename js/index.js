@@ -31,6 +31,7 @@ function resizeAboutUs() {
     }
 
     $(".about-us").css(style);
+    
 }
 
 moveNav($(window));
@@ -42,12 +43,29 @@ $(window).on("resize", () => {
 });
 
 function scrollToAboutUs() {
-    console.log("here");
     document.getElementById("about-us").scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function scrollToRatings() {
+    document.getElementById("ratings").scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 $("#aboutUsLink").click(scrollToAboutUs);
 
+$("#ratingsLink").click(scrollToRatings);
+
 $(document).ready(function() {
-    
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    switch(urlParams.get("section")) {
+        case "about-us":
+            scrollToAboutUs();
+            break;
+        case "ratings":
+            scrollToRatings();
+            break;
+        default:
+            break;
+    }
 });

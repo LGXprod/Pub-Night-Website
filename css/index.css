@@ -38,6 +38,21 @@ p {
     font-size: 1.5em;
 }
 
+.btn-primary {
+    width: 50%; 
+    position: relative;
+    left: 25%;
+    background-color: #5d5b6a;
+    border-color: #5d5b6a;
+    color: #f5cdaa;
+}
+
+.btn-primary:hover {
+    background-color: #758184;
+    border-color: #758184;
+    color: #f5cdaa;
+}
+
 .nav-item {
     margin-left: 10px;
     margin-right: 10px;
@@ -64,6 +79,20 @@ p {
     position: absolute;
     z-index: 1;
     width: 100%;
+}
+
+#main-info {
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    top: 15%;
+    width: 35%;
+    height: 25%;
+}
+
+#main-info h1, #main-info p {
+    text-align: left;
+    /* color: #758184; */
 }
 
 .about-us {
