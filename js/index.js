@@ -41,7 +41,13 @@ $(window).on("resize", () => {
     resizeAboutUs();
 });
 
-$("#aboutUsLink").click(function() {
+function scrollToAboutUs() {
     console.log("here");
     document.getElementById("about-us").scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+$("#aboutUsLink").click(scrollToAboutUs);
+
+$(document).ready(function() {
+    
 });
